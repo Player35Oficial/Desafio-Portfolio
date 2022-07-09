@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+.main-container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.footer-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+    color: var(--text-color);
+}
+
+.perfil-container {
+    display: flex;
+    min-width: 26.75rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+
+
+.shadow {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção do perfil */
+.presentation-section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+
+    width: 21.75rem;
+    height: 292px;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+}
+
+/* Imagem */
+.presentation-section:nth-child(1) img {
+    /* Ellipse 1 */
+box-sizing: border-box;
+/* position: absolute; */
+width: 128px;
+height: 128px;
+border-radius: 50%;
+
+/* background: url(./foto-perfil.jfif); */
+border: 2px solid #00FF00;
+}
+
+/* Textos */
+.presentation-section p:nth-child(2) {
+    font-weight: 700;
+    font-size: 23px;
+
+}
+.presentation-section p:nth-child(3) {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* Seção das tecnologias do perfil */
+    .presentation-section:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1.25rem;
+        width: 21.75rem;
+        height: 21.75rem;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 0 40px;
+
+        background-color: var(--bg-cards);
+    }
+    .presentation-section:nth-child(2) ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .presentation-section:nth-child(2) ul li {
+        display: flex;
+        list-style: none;
+        gap: 1.25rem;
+    }
+    .presentation-section:nth-child(2) ul li img {
+        color: var(--text-color);
+        width: 24px;
+        height: 24px;
+    }
+    .presentation-section:nth-child(2) ul li p {
+        font-weight: 300;
+        font-size: 13px;
+        color: var(--text-color);
+        
+    }
+
+    
+/* Seção das tecnologias */
+    .presentation-section:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1.25rem;
+        width: 21.75rem;
+        height: 208px;
+        /* justify-content: center; */
+        /* align-items: flex-start; */
+
+        padding: 1.875rem 1.25rem;
+
+        background-color: var(--bg-cards);
+    }
+    .presentation-section:nth-child(3) p:nth-child(1) {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: var(--text-color);
+    }
+    .tech-list {
+        margin-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .tech-list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        list-style: none;
+        font-weight: 700;
+        font-size: 11px;
+        height: 24px;
+        width: 5.375rem;
+
+        background-color: var(--bg-techs);
+        border-radius: 1.875rem;
+        /* padding: 6px 7px; */
+    }
+
+/* Seção das Experiências */
+    .presentation-section:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1.25rem;
+        width: 21.75rem;
+        height: 208px;
+        /* justify-content: center; */
+        /* align-items: flex-start; */
+
+        padding: 1.875rem 1.25rem;
+
+        background-color: var(--bg-cards);
+    }
+    .presentation-section:nth-child(4) p:nth-child(1) {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: var(--text-color);
+    }
+    .experience-list {
+        display: flex;
+        margin-top: 1.25rem;
+        margin-left: 40px;
+        color: var(--text-color);
+        gap: 16px;
+        flex-direction: column;
+    }
+    .experience-list li p:nth-child(1) {
+        font-weight: 700;
+        font-size: 0.875rem !important;
+    }
+    .experience-list li p:nth-child(2) {
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .experience-list li p:nth-child(3) {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+/* Seção Educação */
+
+    .presentation-section:nth-child(5) {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1.25rem;
+        width: 21.75rem;
+        min-height: 248px;
+        /* justify-content: center; */
+        /* align-items: flex-start; */
+
+        padding: 1.875rem 1.25rem;
+
+        background-color: var(--bg-cards);
+    }
+    .presentation-section:nth-child(5) p:nth-child(1) {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: var(--text-color);
+    }
+    .education-list {
+        display: flex;
+        margin-top: 1.25rem;
+        margin-left: 40px;
+        color: var(--text-color);
+        gap: 16px;
+        flex-direction: column;
+    }
+    .education-list li p:nth-child(1) {
+        font-weight: 700;
+        font-size: 0.875rem !important;
+    }
+    .education-list li p:nth-child(2) {
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .education-list li p:nth-child(3) {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+/* Post div */
+.post-container {
+    display: flex;
+    width: 55.1875rem;
+    gap: 1.875rem;
+    flex-direction: column;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.375rem;
+    width: 100%;
+
+    background-color: var(--bg-cards);
+    border-radius: 1.25rem;
+}
+.project-title h4 {
+    padding: 1.875rem;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.project-title p {
+    padding: 1.875rem;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.projects {
+    display: flex;
+    gap: 1.875rem;
+}
+
+.project-container {
+    height: 11.625rem;
+    width: 28.8125rem;
+    border-radius: 1.25rem;
+
+    background-color: var(--bg-cards);
+}
+
+/* Post section */
+
+.posts {
+    height: 12.5625rem;
+    width: 100%;
+    border-radius: 1.25rem;
+
+    background-color: var(--bg-cards);
+}

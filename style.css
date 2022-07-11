@@ -37,6 +37,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 1.875rem;
+    padding: 0 1.875rem 0 2.5rem;
 }
 
 
@@ -248,9 +249,10 @@ border: 2px solid #00FF00;
 /* Post div */
 .post-container {
     display: flex;
-    width: 55.1875rem;
+    width: 56.75rem;
     gap: 1.875rem;
     flex-direction: column;
+    padding: 0 2.5rem 0 1.875rem;
 }
 
 .project-title {

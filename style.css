@@ -291,6 +291,46 @@ border: 2px solid #00FF00;
     background-color: var(--bg-cards);
 }
 
+.detalhes-projeto {
+    display: flex;    
+    flex-direction: column; 
+    padding: 1.875rem; 
+    font-size: 0.875rem;
+    color: var(--text-color);
+    gap: 1.5rem;
+}
+
+
+.title-projeto {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem; 
+    color: var(--text-color);
+    gap: 1rem;
+}
+
+.projeto-icon {height: 20px;}
+.features-repo {display: flex;  justify-content: space-between; }
+.features-repo-img {
+    display: flex;
+    line-height: 0;
+    align-items: center;
+    gap: 0.5rem;
+}
+.feature-repo-tech {
+    display: flex;
+    line-height: 0;
+    align-items: center;
+    gap: 0.5rem;
+}
+.tech-circle {
+    height: 0.875rem;
+    width: 0.875rem;
+    background-color:rgb(252, 101, 0);
+    border-radius: 50%;
+}
+
 /* Post section */
 
 .posts {

@@ -111,6 +111,14 @@ border: 2px solid #00FF00;
         list-style: none;
         gap: 1.25rem;
     }
+    .presentation-section:nth-child(2) ul li a {
+        display: flex;
+        list-style: none;
+        gap: 1.25rem;
+        text-decoration: none;
+        align-items: center;
+    }
+
     .presentation-section:nth-child(2) ul li img {
         color: var(--text-color);
         width: 24px;

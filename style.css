@@ -298,6 +298,7 @@ border: 2px solid #00FF00;
 
     background-color: var(--bg-cards);
 }
+.project-container a {text-decoration: none;}
 
 .detalhes-projeto {
     display: flex;    

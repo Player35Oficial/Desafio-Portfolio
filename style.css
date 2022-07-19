@@ -376,9 +376,47 @@ border: 2px solid #00FF00;
     width: 75%;
 }
 
-.posts-content-title h4 {font-size: 1.125rem;    font-weight: 700;}
+.posts-content-title h4 {font-size: 0.875rem;    font-weight: 700;}
 .posts-content-title p, .posts-content-tags {
     font-size: 0.875rem;     
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.6rem;
+}
+.posts-content-title h4 span {
+    font-weight: 300;
+}
+
+.posts-content-description a {
+    color: inherit;
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.posts-content-tags {
+    font-weight: 700;
+    color: #5c6bc0;
+}
+
+.post-svg-learning {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    gap: 0.175rem;
+    font-weight: 700;
+}
+
+.post-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.275rem;
+}
+
+.post-link-image {
+    border-radius: 0.8rem;
+    height: 3.75rem;
+}
+
+.post-ld-container {
+    display: flex;
+    gap: 0.875rem;
 }

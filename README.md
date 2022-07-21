@@ -6,7 +6,7 @@ Este projeto é um modelo de Currículo para portfólio desenhado pela galera da
 
 * HTML
 * CSS
-* Git e Github
+* Git e Github (Versionamento)
 
 ### Tecnologias e Implementações a serem realizadas
 

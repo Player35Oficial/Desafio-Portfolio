@@ -109,8 +109,5 @@ function getApiGithub() {
 
 
     }).catch(e => console.log(e))
-
-    
 }
-
 getApiGithub();

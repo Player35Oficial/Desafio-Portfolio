@@ -11,7 +11,7 @@ Este projeto é um modelo de Currículo para portfólio desenhado pela galera da
 ### Tecnologias e Implementações a serem realizadas
 
 * Interatividade com JavaScript
-* Consumir a API do Github (com JS)
+* Consumir a API do Github (com JS) (Em Desenvolvimento)
 * Scraping de Dados do Perfil do LinkedIn (com ScrapedIn/JS)
 
 

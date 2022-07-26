@@ -6,9 +6,9 @@ app.set("view engine", "ejs");
 
 // Criar uma rota
 app.get("/", function(req, res){
-    res.render("index");
+    res.render("pages/index");
 })
 
 // Rodar o servidor
 app.listen(8080);
-console.log("Rodando");
+console.log("Servidor funcionando");

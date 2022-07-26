@@ -1,0 +1,20 @@
+{
+  "name": "desafio-portfolio",
+  "version": "1.0.0",
+  "description": "Este projeto é um modelo de Currículo para portfólio desenhado pela galera da Rocketseat.",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Player35Oficial/Desafio-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Player35Oficial/Desafio-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Player35Oficial/Desafio-Portfolio#readme"
+}

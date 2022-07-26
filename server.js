@@ -8,6 +8,7 @@ app.set("view engine", "ejs");
 app.get("/", function(req, res){
     res.render("pages/index");
 })
+app.use(express.static('public'));
 
 // Rodar o servidor
 app.listen(8080);

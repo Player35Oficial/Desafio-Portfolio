@@ -15,7 +15,7 @@ function getApiGithub() {
         function repo_id(value) {
             if(value.id == "512067296")
             return value
-            console.log(value)
+            // console.log(value) // tudo OK
         }
 
         var idRepos = data.filter(repo_id);
@@ -63,7 +63,7 @@ function getApiGithub() {
         function repo_id2(value) {
             if(value.id == "499358067")
             return value
-            console.log(value)
+            // console.log(value) Tudo Ok
         }
 
         var idRepos = data.filter(repo_id2);

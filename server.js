@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 // Use EJS - Ferramenta para renderizar o html=ejs
 app.set("view engine", "ejs");
 
@@ -11,5 +13,6 @@ app.get("/", function(req, res){
 app.use(express.static('public'));
 
 // Rodar o servidor
-app.listen(8080);
-console.log("Servidor funcionando");
+app.listen(port, () => {
+    console.info("Aplicação rodando em http://localhost:3000");
+});

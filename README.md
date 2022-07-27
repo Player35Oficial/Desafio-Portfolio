@@ -12,12 +12,12 @@ Este projeto é um modelo de Currículo para portfólio desenhado pela galera da
 
 ### Tecnologias e Implementações a serem realizadas
 
-
-* Manipulando HTML e Hospedando a página com Express **EJS** (Concluído)
-* Consumir a API do Github (Concluído)
 * Interatividade com JavaScript
-* _Scraping de Dados do Perfil do LinkedIn (Abortado)_
+* Scraping ou outras Técnicas para Criação ou Apropriação de Posts
+* Responsividade
 
+#### Master Project:
+Tornar o projeto uma aplicação reutilizável por qualquer iniciante;
 
 ### Referências
 

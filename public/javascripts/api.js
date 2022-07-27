@@ -15,7 +15,7 @@ function getApiGithub() {
         function repo_id(value) {
             if(value.id == "512067296")
             return value
-            console.log(value)
+            // console.log(value) // tudo OK
         }
 
         var idRepos = data.filter(repo_id);
@@ -28,7 +28,7 @@ function getApiGithub() {
 
                         <section class="detalhes-projeto">
                             <section class="title-projeto">
-                                <img src="./assets/folder.svg" alt="" class="projeto-icon">
+                                <img src="./images/folder.svg" alt="" class="projeto-icon">
                                 <p id="rp_title01">${item.name}</p>
                             </section>
 
@@ -39,10 +39,10 @@ function getApiGithub() {
                             <section class="features-repo">
                                 <section class="features-repo-img">
                                     
-                                    <img class="projeto-icon" src="./assets/star.svg" alt="">
+                                    <img class="projeto-icon" src="./images/star.svg" alt="">
                                     <p>${item.stargazers_count}</p>
                                     
-                                    <img class="projeto-icon" src="./assets/git-branch.svg" alt="">
+                                    <img class="projeto-icon" src="./images/git-branch.svg" alt="">
                                     <p>${item.forks_count}</p>
 
                                 </section>
@@ -63,7 +63,7 @@ function getApiGithub() {
         function repo_id2(value) {
             if(value.id == "499358067")
             return value
-            console.log(value)
+            // console.log(value) Tudo Ok
         }
 
         var idRepos = data.filter(repo_id2);
@@ -76,7 +76,7 @@ function getApiGithub() {
 
                         <section class="detalhes-projeto">
                             <section class="title-projeto">
-                                <img src="./assets/folder.svg" alt="" class="projeto-icon">
+                                <img src="./images/folder.svg" alt="" class="projeto-icon">
                                 <p id="rp_title01">${item.name}</p>
                             </section>
 
@@ -87,10 +87,10 @@ function getApiGithub() {
                             <section class="features-repo">
                                 <section class="features-repo-img">
                                     
-                                    <img class="projeto-icon" src="./assets/star.svg" alt="">
+                                    <img class="projeto-icon" src="./images/star.svg" alt="">
                                     <p>${item.stargazers_count}</p>
                                     
-                                    <img class="projeto-icon" src="./assets/git-branch.svg" alt="">
+                                    <img class="projeto-icon" src="./images/git-branch.svg" alt="">
                                     <p>${item.forks_count}</p>
 
                                 </section>

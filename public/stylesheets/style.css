@@ -54,7 +54,8 @@ body {
     border-radius: 1.25rem;
 
     width: 21.75rem;
-    height: 292px;
+    height: 100%;
+    max-height: 292px;
     gap: 10px;
 
     justify-content: center;
@@ -78,12 +79,16 @@ border: 2px solid #00FF00;
 }
 
 /* Textos */
-.presentation-section p:nth-child(2) {
+.presentation-name {
+    display: flex;
+    flex-direction: column;
+}
+.presentation-name p:nth-child(1) {
     font-weight: 700;
     font-size: 23px;
 
 }
-.presentation-section p:nth-child(3) {
+.presentation-name p:nth-child(2) {
     font-weight: 300;
     font-size: 13px;
 }
@@ -94,7 +99,7 @@ border: 2px solid #00FF00;
         flex-direction: column;
         border-radius: 1.25rem;
         width: 21.75rem;
-        height: 21.75rem;
+        min-height: 21.75rem;
         justify-content: center;
         align-items: flex-start;
 
@@ -221,9 +226,8 @@ border: 2px solid #00FF00;
         flex-direction: column;
         border-radius: 1.25rem;
         width: 21.75rem;
-        min-height: 248px;
-        /* justify-content: center; */
-        /* align-items: flex-start; */
+        height: 100%;
+        min-height: fit-content;
 
         padding: 1.875rem 1.25rem;
 
@@ -258,7 +262,8 @@ border: 2px solid #00FF00;
 /* Post div */
 .post-container {
     display: flex;
-    width: 56.75rem;
+    width: 100%;
+    min-width: 56.75rem;
     gap: 1.875rem;
     flex-direction: column;
     padding: 0 2.5rem 0 1.875rem;
@@ -294,7 +299,8 @@ border: 2px solid #00FF00;
 
 .project-container {
     height: 11.625rem;
-    width: 28.8125rem;
+    width: 100%;
+    min-width: 25rem;
     border-radius: 1.25rem;
 
     background-color: var(--bg-cards);
@@ -419,4 +425,143 @@ border: 2px solid #00FF00;
 .post-ld-container {
     display: flex;
     gap: 0.875rem;
+}
+
+/* Media queries */
+@media (max-width: 1360px) {
+    html {font-size: 90%;}
+
+    .post-container {
+        width: 100%;
+        min-width: 31.8125rem;
+        
+    }
+    .project-container {
+    height: 12.625rem;
+    width: 100%;
+    min-width: 10rem;
+    border-radius: 1.25rem;
+    background-color: var(--bg-cards);
+    }
+}
+
+@media (max-width: 768px) {
+    html {font-size: 80%;}
+    .project-container {
+        height: 14.625rem;
+        width: 100%;
+        min-width: 10rem;
+    }
+
+    
+    .presentation-section:nth-child(1) {
+        /* height: 128px; */
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .presentation-section:nth-child(1) img {
+        height: 80px;
+        width: auto;
+    }
+    .presentation-section p:nth-child(1) {
+        font-size: 1.25rem;
+    }
+
+    .perfil-container {
+        gap: 0.875rem;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 60%;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        gap: 15px;
+        align-items: center;
+    }
+    .perfil-container {
+        width: 90vw;
+        padding: 0;
+    }
+
+    /* Social */
+    .presentation-section:nth-child(1) {
+        height: 128px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .presentation-section:nth-child(1),
+    .presentation-section:nth-child(2),
+    .presentation-section:nth-child(3),
+    .presentation-section:nth-child(4),
+    .presentation-section:nth-child(5) {
+        width: 95%;
+    }
+    .presentation-section:nth-child(2) {
+        padding: 0 10px;
+        height: 100%;
+        min-height: 14rem;
+    }
+    .presentation-section:nth-child(2) ul li p { font-size: 12px;}
+    .presentation-section:nth-child(2) ul li img { height: 16px; width: auto}
+
+    .presentation-section:nth-child(2) ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 8.25rem;
+        width: 100%;
+    }
+
+
+    /* Tecnologias */
+    .tech-list {
+        width: 100%;
+        justify-content: center;
+    }
+    .tech-list li {
+        width: 8.765rem;
+    }
+    .presentation-section:nth-child(3) {
+        height: 140px;
+    }
+
+    /* Experiências */
+    .presentation-section:nth-child(4) {
+        height: 150px;
+    }
+    .experience-list {
+        justify-content: center;
+    }
+
+    .projeto-icon {
+        height: 16px;
+    }
+    .features-repo {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .feature-repo-tech {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 320px) {
+    
+    .presentation-section:nth-child(3) {
+        height: 170px;
+    }
+    .post-container {
+        width: 100%;
+        min-width: 16.25rem;
+    }
+    .project-container {
+        height: 16.625rem;
+    }
 }
